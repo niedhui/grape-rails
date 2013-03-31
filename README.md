@@ -1,6 +1,6 @@
 # Grape::Rails
 
-This gem provides Grape for your Rails application
+This gem provides Grape for your Rails 3 application
 
 ## Installation
 
@@ -12,13 +12,19 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install grape-rails
-
 ## Usage
 
-TODO: Write usage instructions here
+First, you need to run the generator:
+
+```console
+rails g grape:install
+```
+
+The generator will install an initializer which add the reloading capability for Grape.
+Then you should place your api files under `app/api`.
+If you place your files to other location, like `lib`, Then  you need
+to modify the `grape.rb` initialize file.
+
 
 ## Contributing
 
